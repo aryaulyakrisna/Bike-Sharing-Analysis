@@ -8,7 +8,7 @@ git clone https://github.com/aryaulyakrisna/Bike-Sharing-Analysis.git
 ## Setup Environment & Installing Packages
 ```
 python -m venv venv
-source venv/Scripts/activate
+venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
