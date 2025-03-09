@@ -17,5 +17,4 @@ pip install -r requirements.txt
 streamlit run dashboard.py
 ```
 
-## Go to Streamlit
-- 🔗 [Streamlit](https://aryaulyakrisna-bikeanalysis.streamlit.app/)
+## Go to Streamlit [🔗](https://aryaulyakrisna-bikeanalysis.streamlit.app/)
