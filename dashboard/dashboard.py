@@ -1,9 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
 import seaborn as sns
-import altair as alt
 
 day_df = pd.read_csv("./dashboard/main_day_data.csv")
 hour_df = pd.read_csv("./dashboard/main_hour_data.csv")
