@@ -148,7 +148,12 @@ with st.container():
                   """)
     
     with st.expander("Recommendations and Suggestions"):
-      st.markdown("- Tingkatkan ketersediaan sepeda di hari kerja dan terapkan promo atau rute wisata khusus untuk meningkatkan penyewaan di hari libur.")
+      st.markdown("""
+                  - Tingkatkan ketersediaan sepeda di hari kerja dan terapkan promo atau rute wisata khusus untuk meningkatkan penyewaan di hari libur.
+                  - Tingkatkan ketersedian sepeda di musim dengan permintaan tinggi (gugur & panas).
+                  - Lakukan promosi di musim dengan permintaan rendah (semi & dingin). 
+                  - Lakukan penelitian lebih lanjut untuk mencari daerah dengan penyewa sepeda terbanyak.
+                  """)
 
     st.divider()
 
@@ -167,9 +172,8 @@ with st.container():
                   """)
     with st.expander("Recommendations & Suggestions"):
       st.markdown("""
-                  - Tingkatkan ketersedian sepeda di musim dengan permintaan tinggi (gugur & panas).
-                  - Lakukan promosi di musim dengan permintaan rendah (semi & dingin). 
-                  - Lakukan penelitian lebih lanjut untuk mencari daerah dengan penyewa sepeda terbanyak.
+                  - Sesuaikan strategi operasional dengan perubahan suhu. 
+                  - Pada hari-hari dengan suhu yang nyaman, promosi atau Tingkatkan ketersediaan unit sepeda tersedia dapat memaksimalkan keuntungan.
                   """)
       
     st.divider()
@@ -232,7 +236,12 @@ with st.container():
                     """)
       
       with st.expander("Recommendations and Suggestions"):
-        st.markdown("- Tingkatkan ketersediaan sepeda di hari kerja dan terapkan promo atau rute wisata khusus untuk meningkatkan penyewaan di hari libur.")
+        st.markdown("""
+                    - Tingkatkan ketersediaan sepeda di hari kerja dan terapkan promo atau rute wisata khusus untuk meningkatkan penyewaan di hari libur.
+                    - Tingkatkan ketersedian sepeda di musim dengan permintaan tinggi (gugur & panas).
+                    - Lakukan promosi di musim dengan permintaan rendah (semi & dingin). 
+                    - Lakukan penelitian lebih lanjut untuk mencari daerah dengan penyewa sepeda terbanyak.
+                    """)
       
       st.divider()
 
@@ -245,15 +254,14 @@ with st.container():
       with st.expander("Conclusion"):
         st.markdown("""
                     - Jumlah penyewaan sepeda setiap harinya besar dipengaruhi oleh temperatur yang dirasakan oleh penyewa seperti yang terlihat pada heatmap korelasi antar fitur. 
-                    - Berdasarkan heatmap korelasi antar fitur, terdapat hubungan yang sangat kuat antara temperature dan atempature dengan nilai korelasi sebesar 0.99, yang menunjukkan bahwa kedua variabel ini hampir identik. 
-                    - Korelasi antara humidity dan faktor lainnya relatif rendah, dengan nilai tertinggi sebesar 0.14 terhadap atempature. 
-                    - Sementara itu, windspeed memiliki korelasi negatif dengan fitur lainnya, terutama dengan humidity -0.24 dan temperature -0.16.
+                    - Berdasarkan heatmap korelasi antar fitur, terdapat hubungan yang sangat kuat antara temperature dan atemperature dengan nilai korelasi sebesar 0.99, yang menunjukkan bahwa kedua variabel ini hampir identik. 
+                    - Humidity memiliki korelasi yang relatif negatif dengan faktor lainnya, dengan nilai tertinggi sebesar -0.05 terhadap temperature. 
+                    - Sementara itu, windspeed memiliki korelasi negatif dengan fitur lainnya, terutama dengan humidity -0.29.
                     """)
       with st.expander("Recommendations & Suggestions"):
         st.markdown("""
-                    - Tingkatkan ketersedian sepeda di musim dengan permintaan tinggi (gugur & panas).
-                    - Lakukan promosi di musim dengan permintaan rendah (semi & dingin). 
-                    - Lakukan penelitian lebih lanjut untuk mencari daerah dengan penyewa sepeda terbanyak.
+                    - Sesuaikan strategi operasional dengan perubahan suhu. 
+                    - Pada hari-hari dengan suhu yang nyaman, promosi atau Tingkatkan ketersediaan unit sepeda tersedia dapat memaksimalkan keuntungan. 
                     """)
 
       st.divider()
