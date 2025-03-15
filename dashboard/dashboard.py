@@ -158,7 +158,7 @@ with st.container():
     st.divider()
 
     st.subheader("Correlation Between Feature")
-    day_corr = filtered_day_df[['temperature', 'atemperature', 'humidity', 'windspeed']].corr()
+    day_corr = filtered_day_df[['temperature', 'atemperature', 'humidity', 'windspeed', 'total']].corr()
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.heatmap(day_corr, annot=True, fmt=".2f", cmap='coolwarm', linewidths=0.5, ax=ax)
     st.pyplot(fig)
@@ -166,9 +166,9 @@ with st.container():
     with st.expander("Conclusion"):
       st.markdown("""
                   - Jumlah penyewaan sepeda setiap harinya besar dipengaruhi oleh temperatur yang dirasakan oleh penyewa seperti yang terlihat pada heatmap korelasi antar fitur. 
-                  - Berdasarkan heatmap korelasi antar fitur, terdapat hubungan yang sangat kuat antara temperature dan atempature dengan nilai korelasi sebesar 0.99, yang menunjukkan bahwa kedua variabel ini hampir identik. 
-                  - Korelasi antara humidity dan faktor lainnya relatif rendah, dengan nilai tertinggi sebesar 0.14 terhadap atempature. 
-                  - Sementara itu, windspeed memiliki korelasi negatif dengan fitur lainnya, terutama dengan humidity -0.24 dan temperature -0.16.
+                  - Berdasarkan heatmap korelasi antar fitur, terdapat hubungan yang kuat antara temperature dengan total dan atemperature dengan total dengan nilai masing - masing korelasi sebesar 0.64. 
+                  - Korelasi humidity dengan total relatif rendah, dengan nilai sebesar 0.14 terhadap. 
+                  - Sementara itu, faktor lainnya memiliki korelasi yang cenderung negatif.
                   """)
     with st.expander("Recommendations & Suggestions"):
       st.markdown("""
@@ -246,7 +246,7 @@ with st.container():
       st.divider()
 
       st.subheader("Correlation Between Feature")
-      hour_corr = filtered_hour_df[['temperature', 'atemperature', 'humidity', 'windspeed']].corr()
+      hour_corr = filtered_hour_df[['temperature', 'atemperature', 'humidity', 'windspeed', 'total']].corr()
       fig, ax = plt.subplots(figsize=(8, 6))
       sns.heatmap(hour_corr, annot=True, fmt=".2f", cmap='coolwarm', linewidths=0.5, ax=ax)
       st.pyplot(fig)
@@ -254,9 +254,9 @@ with st.container():
       with st.expander("Conclusion"):
         st.markdown("""
                     - Jumlah penyewaan sepeda setiap harinya besar dipengaruhi oleh temperatur yang dirasakan oleh penyewa seperti yang terlihat pada heatmap korelasi antar fitur. 
-                    - Berdasarkan heatmap korelasi antar fitur, terdapat hubungan yang sangat kuat antara temperature dan atemperature dengan nilai korelasi sebesar 0.99, yang menunjukkan bahwa kedua variabel ini hampir identik. 
-                    - Humidity memiliki korelasi yang relatif negatif dengan faktor lainnya, dengan nilai tertinggi sebesar -0.05 terhadap temperature. 
-                    - Sementara itu, windspeed memiliki korelasi negatif dengan fitur lainnya, terutama dengan humidity -0.29.
+                    - Berdasarkan heatmap korelasi antar fitur, terdapat hubungan yang kuat antara temperature dengan total dan atemperature dengan total dengan nilai masing - masing korelasi sebesar 0.64. 
+                    - Korelasi windspeed dengan total relatif rendah, dengan nilai sebesar 0.10 terhadap. 
+                    - Sementara itu, faktor lainnya memiliki korelasi yang cenderung negatif.
                     """)
       with st.expander("Recommendations & Suggestions"):
         st.markdown("""
