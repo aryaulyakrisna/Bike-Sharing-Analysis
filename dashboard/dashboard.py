@@ -101,7 +101,7 @@ with st.container():
     st.write(not_normalized_day_df)
 
     with st.expander("About Dataset"):
-      st.markdown("- Dataset menyajikan data penyewaan sepeda per hari, mencakup informasi seperti musim, cuaca, suhu, dan jumlah penyewa. Analisis dari dataset ini mengungkap pola musiman serta dampak faktor eksternal terhadap tren penyewaan.")
+      st.markdown("- Dataset menyajikan data penyewaan sepeda per hari, mencakup informasi seperti musim, cuaca, suhu, dan jumlah penyewa. Analisis dari dataset ini mengungkap pola musiman serta dampak faktor eksternal terhadap tren penyewaan. gfhgfghfhgfhgfhg")
     
     st.divider()
 
